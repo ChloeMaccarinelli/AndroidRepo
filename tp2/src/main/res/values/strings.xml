@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">TP2</string>
+    <string name="background">background</string>
+    <string name="title">TextView</string>
+    <string name="description">TextView</string>
+    <string name="content">content</string>
+    <string name="imageView">TODO</string>
+    <string-array name="actualites">
+        <item>accueil</item>
+        <item>people</item>
+        <item>politique</item>
+        <item>sport</item>
+        <item>astronomie</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="urlToImage">urlToImage</string>
+
+</resources>

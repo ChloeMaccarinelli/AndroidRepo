@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundApp"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="500dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/historiqueText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="18sp"
+                android:gravity="bottom"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="388dp"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:shrinkColumns="*"
+        android:stretchColumns="*"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/sup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:background="@color/colorBackgroundButton"
+                android:onClick="setListeners"
+                android:tag="S"
+                android:text="@string/sup"
+                android:textColor="@color/colorTextCalculette" />
+
+            <Button
+                android:id="@+id/virgule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:background="@color/colorBackgroundButton"
+                android:onClick="setListeners"
+                android:tag="."
+                android:text="@string/virgule"
+                android:textColor="@color/colorTextCalculette" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/sept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBackgroundButton"
+                android:onClick="setListeners"
+                android:tag="7"
+                android:text="@string/sept"
+                android:textColor="@color/colorTextCalculette" />
+
+            <Button
+                android:id="@+id/huit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBackgroundButton"
+                android:onClick="setListeners"
+                android:tag="8"
+                android:text="@string/huit"
+                android:textColor="@color/colorTextCalculette" />
+
+            <Button
+                android:id="@+id/neuf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBackgroundButton"
+                android:onClick="setListeners"
+                android:tag="9"
+                android:text="@string/neuf"
+                android:textColor="@color/colorTextCalculette" />
+
+            <Button
+                android:id="@+id/plus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBackgroundButton"
+                android:onClick="setListeners"
+                android:tag="+"
+                android:text="@string/plus"
+                android:textColor="@color/colorTextCalculette" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/quatre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBackgroundButton"
+                android:onClick="setListeners"
+                android:tag="4"
+                android:text="@string/quatre"
+                android:textColor="@color/colorTextCalculette" />
+
+            <Button
+                android:id="@+id/cinq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBackgroundButton"
+                android:onClick="setListeners"
+                android:tag="5"
+                android:text="@string/cinq"
+                android:textColor="@color/colorTextCalculette" />
+
+            <Button
+                android:id="@+id/six"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBackgroundButton"
+                android:onClick="setListeners"
+                android:tag="6"
+                android:text="@string/six"
+                android:textColor="@color/colorTextCalculette" />
+
+            <Button
+                android:id="@+id/moins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBackgroundButton"
+                android:onClick="setListeners"
+                android:tag="-"
+                android:text="@string/moins"
+                android:textColor="@color/colorTextCalculette" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/un"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBackgroundButton"
+                android:onClick="setListeners"
+                android:tag="1"
+                android:text="@string/un"
+                android:textColor="@color/colorTextCalculette" />
+
+            <Button
+                android:id="@+id/deux"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBackgroundButton"
+                android:onClick="setListeners"
+                android:tag="2"
+                android:text="@string/deux"
+                android:textColor="@color/colorTextCalculette" />
+
+            <Button
+                android:id="@+id/trois"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBackgroundButton"
+                android:onClick="setListeners"
+                android:tag="3"
+                android:text="@string/trois"
+                android:textColor="@color/colorTextCalculette" />
+
+            <Button
+                android:id="@+id/multiplier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBackgroundButton"
+                android:onClick="setListeners"
+                android:tag="*"
+                android:text="@string/multiplier"
+                android:textColor="@color/colorTextCalculette" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/zero"
+                style="@android:style/Widget.Material.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBackgroundButton"
+                android:onClick="setListeners"
+                android:tag="0"
+                android:text="@string/zero"
+                android:textColor="@color/colorTextCalculette" />
+
+            <Button
+                android:id="@+id/clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBackgroundButton"
+                android:onClick="setListeners"
+                android:tag="C"
+                android:text="@string/clear"
+                android:textColor="@color/colorTextCalculette" />
+
+            <Button
+                android:id="@+id/egal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBackgroundButton"
+                android:onClick="setListeners"
+                android:tag="="
+                android:text="@string/egal"
+                android:textColor="@color/colorTextCalculette" />
+
+            <Button
+                android:id="@+id/diviser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBackgroundButton"
+                android:onClick="setListeners"
+                android:tag="/"
+                android:text="@string/diviser"
+                android:textColor="@color/colorTextCalculette" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/operationText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textAlignment="textEnd"
+        android:textColor="@color/colorOperation"
+        android:textSize="30sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/resultatText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="370dp"
+        android:layout_marginTop="250dp"
+        android:textColor="@color/colorOperation"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
